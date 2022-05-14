@@ -3,9 +3,19 @@ class x:
         print("main0")
     def w(self):
         print("main1")
+
+
 class y(x):
     def e(self):
         print("slave")
+    def q(self):
+        print("slave1")
 
-print(issubclass(y,x))
-print(issubclass(x,y))
+a=x()
+b=y()
+
+a.q()
+b.q()
+
+
+
